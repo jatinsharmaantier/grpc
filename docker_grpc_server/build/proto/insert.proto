@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package insertPackage;
+
+service Insert {  
+    rpc Insert (Customer) returns (Customer) {} 
+}
+ 
+message Customer {
+    string id = 1;
+    string name = 2;
+    int32 age = 3;
+    string address = 4;
+} 
